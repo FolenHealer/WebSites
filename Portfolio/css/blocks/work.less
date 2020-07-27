@@ -1,0 +1,44 @@
+// main: ../style.less
+
+.work{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(#000,25%);
+    transition: box-shadow .2s linear;
+    &:hover{
+        box-shadow: 0 0 25px rgba(#000,25%);
+    }
+
+    @media @mobile{
+        max-width: 700px;
+    }
+
+    @media @mobile-sm{
+        margin: 0 auto;
+    }
+}
+.work__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work__content{
+    padding: 1rem 0.8rem;
+}
+
+.work__cat{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: @black;
+    margin-bottom: 0.5rem;
+}
+
+.work__title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.06rem;
+    font-weight: bold;
+    color: @black;
+    text-transform: uppercase;
+}
